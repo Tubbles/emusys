@@ -1,0 +1,6 @@
+[requires]
+    fmt/8.0.1
+    imgui/1.85
+ 
+[generators]
+    cmake_find_package

@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "gcc+conan",
+            "includePath": [
+                "~/.conan/data/fmt/8.0.1/_/_/package/**",
+                "~/.conan/data/imgui/1.85/_/_/package/**",
+                "${workspaceFolder}/src/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
