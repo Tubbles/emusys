@@ -7,9 +7,9 @@ import argparse
 def main():
     parser = argparse.ArgumentParser(description="compile and run")
     parser.add_argument(
-        "-w", "--clean-conan-source", action="store_true", help="clean conan cache, including sources")
+        "-w", "--clean-conan-source", action="store_true", help="clean conan cache, including sources (seldomly usable)")
     parser.add_argument(
-        "-d", "--clean-conan", action="store_true", help="clean conan cache, keeping sources")
+        "-d", "--clean-conan", action="store_true", help="clean conan cache, keeping sources (seldomly usable)")
     parser.add_argument(
         "-c", "--clean-cmake", action="store_true", help="regenerate cmake")
     parser.add_argument(

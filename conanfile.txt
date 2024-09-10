@@ -1,7 +1,0 @@
-[requires]
-    fmt/8.0.1
-    imgui/1.85
-    argparse/2.2
-
-[generators]
-    cmake_find_package
