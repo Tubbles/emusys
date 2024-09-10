@@ -7,13 +7,13 @@ import argparse
 def main():
     parser = argparse.ArgumentParser(description="compile and run")
     parser.add_argument(
-        "-s", "--clean-conan-source", action="store_true", help="clean conan cache, including sources")
+        "-w", "--clean-conan-source", action="store_true", help="clean conan cache, including sources")
     parser.add_argument(
-        "-w", "--clean-conan", action="store_true", help="clean conan cache, keeping sources")
+        "-d", "--clean-conan", action="store_true", help="clean conan cache, keeping sources")
     parser.add_argument(
-        "-d", "--clean-cmake", action="store_true", help="regenerate cmake")
+        "-c", "--clean-cmake", action="store_true", help="regenerate cmake")
     parser.add_argument(
-        "-c", "--clean", action="store_true", help="clean build first")
+        "-r", "--clean", action="store_true", help="clean build first")
     parser.add_argument(
         "-n", "--no-run", action="store_true", help="do not run after compile")
     parser.add_argument(

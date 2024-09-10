@@ -1,13 +1,18 @@
+#include <argparse/argparse.hpp>
 #include <fmt/core.h>
 #include <imgui.h>
 #include <vector>
 
 int main(int argc, char* argv[])
 {
-    fmt::print("Hello, world! \n");
-    std::vector<std::string> args(argv + 1, argv + argc);
-    for (auto a : args) {
-        fmt::print("#{}#\n", a);
+    argparse::ArgumentParser program("emusys", "0.0.1");
+
+    try {
+        program.parse_args(argc, argv);
+    } catch (const std::runtime_error& err) {
+        std::cerr << err.what() << std::endl;
+        std::cerr << program;
+        std::exit(1);
     }
 
     // This is from the imgui null example

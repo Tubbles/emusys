@@ -3,6 +3,7 @@
         {
             "name": "gcc+conan",
             "includePath": [
+                "~/.conan/data/argparse/2.2/_/_/package/**",
                 "~/.conan/data/fmt/8.0.1/_/_/package/**",
                 "~/.conan/data/imgui/1.85/_/_/package/**",
                 "${workspaceFolder}/src/**"

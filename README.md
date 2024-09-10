@@ -8,4 +8,4 @@ The initial target is getting a working game boy emulator working
 
 It is all written in C++20
 
-Tech stack: fmt
+Tech stack: fmt, imgui, argparse
